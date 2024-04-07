@@ -1,0 +1,21 @@
+.skills-container {
+    height: fit-content;
+    width: fit-content;
+    background-color: #424549;
+    border: 2px solid #424549;
+    border-radius: 10px;
+}
+
+li {
+    font-size: 15px;
+}
+
+.main-li {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sub-li {
+    color: white;
+}
