@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# My Portfolio (James Edwards)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Link: TBD
 
-## Available Scripts
+## Description:
 
-In the project directory, you can run:
+This is my (James Edwards) software engineering portfolio created via React.js. My portfolio consists of a single-page-application that contains information about me, my skills, my projects and my contact information.
 
-### `npm start`
+## Features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+My portfolio consists of a single route that contains a component that renders the page (```<Home />```), and two individual components that display my skills (```<BulletList />```) and projects (```<ProjectCard />```) respectively. The ```<ProjectCard />``` component also contains two buttons that redirects users to either the deployed site, or the virtual repository for the project on GitHub.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## User Flow:
 
-### `npm test`
+The application consists of a single route (endpoint ```'/'```) which contains information on me, my skills, my projects and my contact information. While users are mostly limited to viewing the information present on the page, each instance of the ```<ProjectCard />``` component contains two buttons that redirect the user to a different page. The first link redirects the user to the site where the project is deployed. The second link redirects the user to the virtual repository for the project on GitHub.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Routes:
 
-### `npm run build`
+### `/`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is the only route that is rendered by the application. It is rendered via the ```<Home />``` component, which contains information on me and my contact information by default. It also uses two other components, ```<BulletList />``` and ```<ProjectCard />```, which displays a bullet list of my skills and information on my projects respectively.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Components:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ```<Home />```
 
-### `npm run eject`
+This component renders the main home route at endpoint `/`. By default, the component lists information about me and my contact information. The component also contains further information used to render two helper components: ```<BulletList />``` and ```<ProjectCard />```.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ```<BulletList />```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This component renders an unordered list of my top software engineering skills. Each list element contains a software topic (e.g frontend development, testing/debugging), followed by another unordered list that contains specific skills where I am proficient on the topic. For instance, if the topic is 'frontend development', one of the skills listed would be 'HTML', 'JavaScript' and more. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ```<ProjectCard />```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This component is used to render a card that contains information on a specific project. The component contains up to 6 different props that are required to display the component: ```title``` (the title of the project), ```image``` (the image stored in the public folder), ```alt``` (an alt description of the image displayed), ```description``` (an array containing one string that describes the purpose of the application, followed by another string describing what tools were used to build the application), ```siteLink``` (a link to the deployed site for the project) and ```githubLink``` (a link to the virtual repository on GitHub for the project). The information needed to render the component is defined in the ```<Home />``` component as an array containing objects (the ```map()``` function is used against the array to render each instance of the component).
 
-## Learn More
+## How to Set Up:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Assuming you have the application folder installed on your computer, use your preferred terminal to access the directory. Once inside the directory, install all dependencies using the command ```npm install``` (if you do not have 'npm' already installed in your terminal, please do so). Once the dependencies have been installed, enter the command ```npm start``` while inside the directory containing the application. Please note that the starting sequence may take upwards of a minute-and-a-half to start rendering the application in a browser.

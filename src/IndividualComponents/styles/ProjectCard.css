@@ -41,6 +41,7 @@ img {
     width: 200px;
     padding-top: 2px;
     padding-left: 4px;
+    text-align: left;
 }
 
 .project-description-container p {

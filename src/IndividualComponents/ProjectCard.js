@@ -3,8 +3,6 @@ import './styles/ProjectCard.css';
 
 const ProjectCard = ({ title, image, alt, description, siteLink, githubLink }) => {
 
-    /*const relativePath = `../ProjectPictures/${image}`*/
-
     return (
         <div className='project-container'>
             <div className='project-title-container'>

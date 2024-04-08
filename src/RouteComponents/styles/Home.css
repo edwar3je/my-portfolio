@@ -62,6 +62,7 @@ svg {
     border: 2px solid #424549;
     border-radius: 10px;
     padding: 10px;
+    text-align: left;
 }
 
 .projects-container {

@@ -5,8 +5,6 @@ import './styles/Home.css';
 
 const Home = () => {
 
-    /** aniquiz.png and witter.png */
-
     const projectContent = [
         {title: 'AniQuiz', image: 'aniquiz.png', alt: 'A picture showing the home page of AniQuiz.', description: ['Do you consider yourself an anime fan? Test your knowledge of anime quotes and compete against other users to be at the top of the leaderboards.', 'Application built using Python, Flask and Jinja.'], siteLink: 'https://aniquiz.onrender.com', githubLink: 'https://github.com/edwar3je/capstone-project-1'},
         {title: 'Witter', image: 'witter.png', alt: 'A picture showing a feed on Witter.', description: ['A Twitter clone that has a Discord layout and a custom form of error handling.', 'Frontend and backend built using React and Node.js respectively.'], siteLink: 'https://witter-frontend.onrender.com', githubLink: 'https://github.com/edwar3je/Witter-Frontend'}
@@ -21,8 +19,8 @@ const Home = () => {
             <h3>About Me</h3>
             <hr/>
             <div className='about-container'>
-                <p>Hi, my name is James and I am a junior level software engineer that specializes in full-stack development. I began my software engineering journey by enrolling in the Springboard Software Engineering Career Track in February 2023. Over the course of my program, I proceeded to learn about the fundamentals of web development and built web applications for both personal and professional use.</p>
-                <p>I now want to bring these new found skills into a junior level position that either focuses on full-stack development, backend development or quality assurance. Feel free to check out what I have built further below. If you are interested in any of my projects, you can contact me via phone, email or LinkedIn (I like talking about my work)!</p>
+                <p>Hi, my name is James, and I am a junior level software engineer that specializes in full-stack development. I began my software engineering journey by enrolling in the Springboard Software Engineering Career Track in February 2023. Over the course of my program, I proceeded to learn about the fundamentals of web development and built web applications for both personal and professional use.</p>
+                <p>I now want to bring these new-found skills into a junior level position that either focuses on full-stack development, backend development or quality assurance. Feel free to check out what I have built further below. If you are interested in any of my projects, you can contact me via phone, email or LinkedIn (I like talking about my work)!</p>
             </div>
             <h3>Skills</h3>
             <hr/>
