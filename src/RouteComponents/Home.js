@@ -6,8 +6,8 @@ import './styles/Home.css';
 const Home = () => {
 
     const projectContent = [
-        {title: 'AniQuiz', image: 'aniquiz.PNG', alt: 'A picture showing the home page of AniQuiz.', description: ['Do you consider yourself an anime fan? Test your knowledge of anime quotes and compete against other users to be at the top of the leaderboards.', 'Application built using Python, Flask and Jinja.'], siteLink: 'https://aniquiz.onrender.com', githubLink: 'https://github.com/edwar3je/capstone-project-1'},
-        {title: 'Witter', image: 'witter.PNG', alt: 'A picture showing a feed on Witter.', description: ['A Twitter clone that has a Discord layout and a custom form of error handling.', 'Frontend and backend built using React and Node.js respectively.'], siteLink: 'https://witter-frontend.onrender.com', githubLink: 'https://github.com/edwar3je/Witter-Frontend'}
+        {title: 'AniQuiz', image: 'aniquiz.png', alt: 'A picture showing the home page of AniQuiz.', description: ['Do you consider yourself an anime fan? Test your knowledge of anime quotes and compete against other users to be at the top of the leaderboards.', 'Application built using Python, Flask and Jinja.'], siteLink: 'https://aniquiz.onrender.com', githubLink: 'https://github.com/edwar3je/capstone-project-1'},
+        {title: 'Witter', image: 'witter.png', alt: 'A picture showing a feed on Witter.', description: ['A Twitter clone that has a Discord layout and a custom form of error handling.', 'Frontend and backend built using React and Node.js respectively.'], siteLink: 'https://witter-frontend.onrender.com', githubLink: 'https://github.com/edwar3je/Witter-Frontend'}
     ]
     
     return (
