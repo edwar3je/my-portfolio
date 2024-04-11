@@ -3,39 +3,39 @@ import './styles/BulletList.css';
 
 const BulletList = () => {
     return (
-        <div class="skills-container">
+        <div className="skills-container">
         <ul>
-          <li class="main-li">Frontend:</li>
+          <li className="main-li">Frontend:</li>
           <ul>
-            <li class="sub-li">HTML</li>
-            <li class="sub-li">CSS</li>
-            <li class="sub-li">JavaScript</li>
-            <li class="sub-li">jQuery</li>
-            <li class="sub-li">React</li>
+            <li className="sub-li">HTML</li>
+            <li className="sub-li">CSS</li>
+            <li className="sub-li">JavaScript</li>
+            <li className="sub-li">jQuery</li>
+            <li className="sub-li">React</li>
           </ul>
-          <li class="main-li">Backend:</li>
+          <li className="main-li">Backend:</li>
           <ul>
-            <li class="sub-li">Python</li>
-            <li class="sub-li">Flask</li>
-            <li class="sub-li">Node.js</li>
-            <li class="sub-li">Express.js</li>
+            <li className="sub-li">Python</li>
+            <li className="sub-li">Flask</li>
+            <li className="sub-li">Node.js</li>
+            <li className="sub-li">Express.js</li>
           </ul>
-          <li class="main-li">SQL/Database Queries:</li>
+          <li className="main-li">SQL/Database Queries:</li>
           <ul>
-            <li class="sub-li">PostgreSQL</li>
+            <li className="sub-li">PostgreSQL</li>
           </ul>
-          <li class="main-li">Testing:</li>
+          <li className="main-li">Testing:</li>
           <ul>
-            <li class="sub-li">Jasmine</li>
-            <li class="sub-li">Jest</li>
-            <li class="sub-li">Supertest</li>
+            <li className="sub-li">Jasmine</li>
+            <li className="sub-li">Jest</li>
+            <li className="sub-li">Supertest</li>
           </ul>
-          <li class="main-li">Data Structures/Algorithms:</li>
+          <li className="main-li">Data Structures/Algorithms:</li>
           <ul>
-            <li class="sub-li">Comparative Sorts (Bubble, Selection, Insert)</li>
-            <li class="sub-li">Linked Lists</li>
-            <li class="sub-li">Trees</li>
-            <li class="sub-li">Graphs</li>
+            <li className="sub-li">Comparative Sorts (Bubble, Selection, Insert)</li>
+            <li className="sub-li">Linked Lists</li>
+            <li className="sub-li">Trees</li>
+            <li className="sub-li">Graphs</li>
           </ul>
         </ul>
       </div>

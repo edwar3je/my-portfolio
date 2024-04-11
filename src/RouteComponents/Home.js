@@ -1,6 +1,7 @@
 import React from 'react';
 import BulletList from '../IndividualComponents/BulletList';
 import ProjectCard from '../IndividualComponents/ProjectCard';
+import { v4 as uuidv4 } from 'uuid'
 import './styles/Home.css';
 
 const Home = () => {
@@ -22,15 +23,20 @@ const Home = () => {
                 <p>Hi, my name is James, and I am a junior level software engineer that specializes in full-stack development. I began my software engineering journey by enrolling in the Springboard Software Engineering Career Track in February 2023. Over the course of my program, I proceeded to learn about the fundamentals of web development and built web applications for both personal and professional use.</p>
                 <p>I now want to bring these new-found skills into a junior level position that either focuses on full-stack development, backend development or quality assurance. Feel free to check out what I have built further below. If you are interested in any of my projects, you can contact me via phone, email or LinkedIn (I like talking about my work)!</p>
             </div>
+            <div className='download-container'>
+                <a href='James_E_Edwards_Resume.docx' download='James_E_Edwards_Resume.docx'>
+                    <button className='download-button'>Download My Resume</button>
+                </a>
+            </div>
             <h3>Skills</h3>
             <hr/>
             <BulletList />
             <h3>Projects</h3>
             <hr/>
             <div className='projects-container'>
-                <div class='actual-projects-container'>
+                <div className='actual-projects-container'>
                     {projectContent.map(({title, image, alt, description, siteLink, githubLink}) => {
-                        return <ProjectCard title={title} image={image} alt={alt} description={description} siteLink={siteLink} githubLink={githubLink} />
+                        return <ProjectCard title={title} image={image} alt={alt} description={description} siteLink={siteLink} githubLink={githubLink} key={uuidv4()}/>
                     })}
                 </div>
             </div>
